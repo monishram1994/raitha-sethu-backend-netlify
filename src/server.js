@@ -7,7 +7,7 @@ const userRoutes = express.Router();
 const PORT = 4000;
 const serverless= require('serverless-http');
 
-let User = require('./models/user.model');
+let User = require('../models/user.model');
 
 //For middleware
 app.use(cors());
@@ -22,7 +22,7 @@ connection.once('open', function() {
     console.log("MongoDB database connection established successfully");
 })
 
-app.use('/.netlify/functions/api/rsdb',userRoutes);
+app.use('/.netlify/functions/server/rsdb',userRoutes);
 
 userRoutes.route('/users').get((req,res)=>{
     
