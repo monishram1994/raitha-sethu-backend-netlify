@@ -2,7 +2,7 @@
   "name": "raitha-sethu-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/server.js",
   "scripts": {
     "start": "./node_modules/.bin/netlify-lambda serve src",
     "build": "./node_modules/.bin/netlify-lambda build src"
@@ -17,6 +17,8 @@
     "express": "^4.17.1",
     "mongoose": "^5.10.3",
     "netlify-lambda": "^2.0.1",
-    "serverless-http": "^2.5.0"
+    "nodeexpress": "^1.0.0",
+    "nodemon": "^2.0.4",
+    "serverless-http": "^2.6.0"
   }
 }
